@@ -1,0 +1,25 @@
+<div class="card text-white bg-dark mb-3">
+    <div class="card-header bg-success">Dettagli personaggi</div>
+    <h1>&nbsp;Pianeta : {{people.name}}</h1>
+    <div class="card-body">
+        <h5 class="card-title">Anno {{people.birth_year}}</h5>
+        <h5 class="card-title">Colore occhi {{people.eye_color}}</h5>
+        <h5 class="card-title">Sesso {{people.gender}}</h5>
+        <h5 class="card-title">Colore capelli {{people.hair_color}}</h5>
+        <h5 class="card-title">Altezza {{people.height}}</h5>
+        <h5 class="card-title">Massa {{people.mass}}</h5>
+        <h5 class="card-title">Colore Pelle {{people.skin_color}}</h5>
+        <h5 class="card-title">Homeworld <a href="#"
+        [routerLink]="['/planets', planet.url]" 
+        routerLinkActive="router-link-active">
+        {{planet.name}}</a></h5>
+        <h5 class="card-title">Film {{people.films.length}}</h5>
+        <h5 class="card-title">Specie {{people.species.length}}</h5>
+        <h5 class="card-title">Navicella {{people.starships.length}}</h5>
+        <h5 class="card-title">Veicoli {{people.vehicles.length}}</h5>
+        <h5 class="card-title">Url {{people.url}}</h5>
+        <h5 class="card-title">Creazione {{people.created}}</h5>
+        <h5 class="card-title">Edited {{people.edited}}</h5>
+
+    </div>
+</div>

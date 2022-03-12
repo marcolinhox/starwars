@@ -1,0 +1,25 @@
+<div class="card text-white bg-dark mb-3">
+    <div class="card-header bg-success">Dettagli pianeti</div>
+    <h1>&nbsp;Pianeta : {{planet.name}}</h1>
+    <div class="card-body">
+        <h5 class="card-title">Diametro:{{planet.diameter}}</h5>
+        <h5 class="card-title">Rotazione: {{planet.rotation_period}}</h5>
+        <h5 class="card-title">Orbita: {{planet.orbital_period}}</h5>
+        <h5 class="card-title">Gravity: {{planet.gravity}}</h5>
+        <h5 class="card-title">Population: {{planet.population}}</h5>
+        <h5 class="card-title">Climate: {{planet.climate}}</h5>
+        <h5 class="card-title">Terrain: {{planet.terrain}}</h5>
+        <h5 class="card-title">Surface Water: {{planet.surface_water}}</h5>
+        <h5 class="card-title">Residents: {{planet.residents.length}}</h5>
+        <ul class="bg-success">
+            <li *ngFor="let item of residents;"><a href="#"
+            [routerLink]="['/people', item.url]" routerLinkActive="router-link-active">
+            {{item.name}}</a></li>
+        </ul>
+        <h5 class="card-title">Films: {{planet.films.length}}</h5>
+        <h5 class="card-title">Url: {{planet.url}}</h5>
+        <h5 class="card-title">Created: {{planet.created}}</h5>
+        <h5 class="card-title">Edited: {{planet.edited}}</h5>
+
+    </div>
+</div>
